@@ -14,7 +14,6 @@ logger = logging.getLogger(__name__)
 
 router = Router()
 
-
 @router.message(CommandStart())
 async def cmd_start(message: Message) -> None:
     await message.answer(
